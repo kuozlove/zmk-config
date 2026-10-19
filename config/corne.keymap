@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -67,7 +68,7 @@
 
             bindings = <
 &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD    &rgb_ug RGB_HUI  &rgb_ug RGB_HUD    &kp CAPS    &trans        &trans        &trans      &trans  &trans
-&bl BL_TOG       &trans           &trans           &kp LC(LA(SPACE))  &trans           &trans             &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &trans  &trans
+&bl BL_TOG       &bt BT_CLR       &trans           &kp LC(LA(SPACE))  &trans           &trans             &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &trans  &trans
 &trans           &trans           &trans           &trans             &trans           &trans             &trans      &kp C_PP      &kp C_MUTE    &trans      &trans  &trans
                                                    &trans             &trans           &trans             &trans      &trans        &trans
             >;
